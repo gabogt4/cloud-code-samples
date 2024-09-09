@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloudbuild/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/ecommerce-434317/basic-nodejs-app:latest', '.']
+- name: 'gcr.io/cloudbuild/docker'
+  args: ['push', 'us-central1-docker.pkg.dev/ecommerce-434317/basic-nodejs-app:latest']
+images: ['us-central1-docker.pkg.dev/ecommerce-434317/basic-nodejs-app:latest']
