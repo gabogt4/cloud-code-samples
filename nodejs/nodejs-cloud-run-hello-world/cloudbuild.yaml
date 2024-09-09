@@ -5,4 +5,4 @@ steps:
   args: ['push', 'us-central1-docker.pkg.dev/ecommerce-434317/basic-nodejs-app:latest']
 images: ['us-central1-docker.pkg.dev/ecommerce-434317/basic-nodejs-app:latest']
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logsBucket: gs://for-build-looging
